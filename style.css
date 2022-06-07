@@ -1,0 +1,184 @@
+/* Variables & Resets */
+:root {
+  --primaryBG: rgb(129, 46, 60);
+  --navBG: rgb(177, 67, 85);
+  --accentFrame: rgb(198, 132, 77);
+  --accentGreen: rgb(194, 197, 180);
+  --bannerCardBG: rgb(227, 158, 173);
+  --navHeight: 175px;
+  --footerBG: rgb(46, 46, 46);
+  --fontColor_Primary: rgb(200, 200, 200);
+  --fontColor_Secondary: rgb(35, 35, 35);
+
+  --primaryFF: ;
+  --secondaryFF: ;
+
+  --shadowBox: 0 0 0.5rem black;
+  --shadowText: 2px 2px 4px black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--primaryBG);
+  height: 100%;
+}
+
+/* Begin Nav */
+
+.navBar {
+  width: 100%;
+  height: var(--navHeight);
+  background: var(--navBG);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+}
+
+.logoWrapper {
+  height: var(--navHeight);
+  min-width: 350px;
+  display: flex;
+  position: relative;
+}
+
+.logo {
+  height: var(--navHeight);
+  margin-left: 10px;
+  display: flex;
+}
+
+.logoText {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  color: var(--fontColor_Primary);
+  text-shadow: var(--shadowText);
+}
+
+.menu {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  background-color: var(--primaryBG);
+  border-radius: 50%;
+  border: 5px solid var(--accentFrame);
+}
+
+.menu ul:hover {
+  background-color: var(--navBG);
+}
+
+/* End Nav / Start Body */
+.campaign {
+  height: 50px;
+  width: 100%;
+  margin: 15px 0 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dividerBar {
+  width: 70%;
+  height: 40px;
+  font-size: 1.5rem;
+  color: var(--fontColor_Secondary);
+  background-color: var(--bannerCardBG);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 2px var(--fontColor_Primary);
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: var(--shadowBox);
+}
+
+.introBanner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subBanner {
+  width: 1250px;
+  height: 400px;
+  display: flex;
+  background-color: var(--accentGreen);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border: 0.35rem solid black;
+  border-radius: 10px;
+  box-shadow: var(--shadowBox);
+}
+
+.subBanner p {
+  width: 80%;
+  font-size: 1.25rem;
+}
+
+.campaignBanner {
+  height: 250px;
+  width: 1200px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+/* OLD Campaigns */
+
+.introBannerOLD {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subBannerOLD {
+  width: 1250px;
+  height: 400px;
+  margin-bottom: 30px;
+  display: flex;
+  background-color: var(--bannerCardBG);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border: 0.35rem solid black;
+  border-radius: 10px;
+  box-shadow: var(--shadowBox);
+}
+
+.subBannerOLD p {
+  width: 80%;
+  font-size: 1.25rem;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  color: var(--fontColor_Primary);
+  background-color: var(--footerBG);
+}
