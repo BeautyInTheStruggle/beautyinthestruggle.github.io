@@ -74,7 +74,7 @@ body {
 }
 
 .menu {
-  width: 450px;
+  width: 250px;
   height: 100%;
   display: flex;
   margin-right: 30px;
@@ -195,4 +195,61 @@ body {
   border: 3px solid black;
   border-radius: 5px;
   box-shadow: var(--shadowBox);
+}
+
+/* Footer Junk */
+
+.spacer {
+  height: 6px;
+  margin-top: 15px;
+  background-color: var(--navBG);
+}
+
+.mainFooterWrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContent {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fontColor_Primary);
+  background-color: var(--footerBG);
+}
+
+.footerContent p {
+  margin: 5px auto;
+  color: var(--fontColor_Primary);
+  font-size: 1.25em;
+}
+
+.footerContent img {
+  height: 120px;
+}
+
+.footerSpacer {
+  margin: 15px;
+  height: 2px;
+  width: 15%;
+  border-radius: 5px;
+  background-color: var(--bannerCardBG);
+}
+
+.footerBottom {
+  display: flex;
+  min-width: 225px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.JBLink {
+  color: var(--fontColor_Primary);
 }
